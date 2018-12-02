@@ -7,6 +7,6 @@
     <li>1568744597</li>
   </suggests>
   <showCrossPromotions>true</showCrossPromotions>
-  <manifestUri>https://raw.githubusercontent.com/DrZhivago1/DocWorld/master/About/Manifest.xml</manifestUri>
+  <manifestUri>https://raw.githubusercontent.com/DrZhivago1/DocWalledVitals/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/DrZhivago1/DocWorld/releases/latest</downloadUri>
 </Manifest>
