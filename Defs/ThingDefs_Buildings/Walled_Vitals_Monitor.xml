@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <!--==================Monitor Base Abstract====================-->
+  <ThingDef Name="WalledMonitorBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <repairEffect>Repair</repairEffect>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <passability>Standable</passability>
+    <rotatable>True</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <clearBuildingArea>false</clearBuildingArea>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <SellPriceFactor>0.50</SellPriceFactor>
+      <Mass>15</Mass>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+  </ThingDef>
+  <!--=========================Vanilla Based Vitals Monitor===================-->
+  <ThingDef ParentName="WalledMonitorBase">
+    <defName>WalledVitalsMonitor</defName>
+    <label>walled vitals monitor</label>
+    <description>Increases medical tend quality, surgery success chance, and immunity gain speed when placed directly adjacent to a bed. Attaching more than one vitals monitor to the same bed will have no effect.</description>
+    <graphicData>
+      <texPath>walledvitalsmonitor/WalledVitalsMonitor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1,1</drawSize>
+    </graphicData>
+    <uiIconPath>walledvitalsmonitor/WalledVitalsMonitor_UI</uiIconPath>
+    <researchPrerequisites>
+      <li>VitalsMonitor</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.07</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>0.02</ImmunityGainSpeedFactor>
+          <SurgerySuccessChanceFactor>0.05</SurgerySuccessChanceFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <designationHotKey>Misc5</designationHotKey>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <uiIconScale>0.85</uiIconScale>
+  </ThingDef>
+</Defs>

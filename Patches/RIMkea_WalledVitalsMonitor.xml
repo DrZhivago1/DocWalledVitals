@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!--Allow RIMkea beds to use Wall Vitals Monitor-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RIMkea</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "PILFURBed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "SNOREGGSingle"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "SNOREGGDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "KRUDNEPPSingle"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "SLABNEPPDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "SNORHOI"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SNORHOI"]/comps</xpath>
+            <value>
+              <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                  <li>WalledVitalsMonitor</li>
+                  <li>VitalsMonitor</li>
+                </linkableFacilities>
+              </li>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "SNORHOI"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitor</li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName = "PETSNORR"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PETSNORR"]/comps</xpath>
+            <value>
+              <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                  <li>WalledVitalsMonitor</li>
+                  <li>VitalsMonitor</li>
+                </linkableFacilities>
+              </li>
+            </value>
+          </nomatch>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "PETSNORR"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitor</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!--======================================IF RIMkea AND sdMedicAddons are installed, add walled spacer vitals monitor to beds===============-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RIMkea</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[sd] medicaddons</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "PILFURBed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "SNOREGGSingle"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "SNOREGGDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "KRUDNEPPSingle"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName = "SLABNEPPDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName = "SNORHOI"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SNORHOI"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_AffectedByFacilities">
+                  <linkableFacilities>
+                    <li>WalledVitalsMonitorSpacer</li>
+                  </linkableFacilities>
+                </li>
+              </value>
+            </nomatch>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName = "SNORHOI"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+              <value>
+                <li>WalledVitalsMonitorSpacer</li>
+              </value>
+            </match>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName = "PETSNORR"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="PETSNORR"]/comps</xpath>
+              <value>
+                <li Class="CompProperties_AffectedByFacilities">
+                  <linkableFacilities>
+                    <li>WalledVitalsMonitorSpacer</li>
+                  </linkableFacilities>
+                </li>
+              </value>
+            </nomatch>
+            <match Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName = "PETSNORR"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+              <value>
+                <li>WalledVitalsMonitorSpacer</li>
+              </value>
+            </match>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

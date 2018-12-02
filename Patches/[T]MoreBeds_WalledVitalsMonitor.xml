@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!--Allow [T] MoreBedsCloth beds to use Wall Vitals Monitor-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[T] MoreBedsCloth</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name = "TBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name = "TDoubleBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name = "TRoyalBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!--======================================IF [T] MoreBedsCloth AND sdMedicAddons are installed, add walled spacer vitals monitor to beds===============-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[T] MoreBedsCloth</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[sd] medicaddons</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "TBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "TDoubleBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "TRoyalBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <!--====================================================================================================Allow [T] MoreBedsVanilla beds to use Wall Vitals Monitor================================================================================-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[T] MoreBedsVanilla</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name = "TBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name = "TDoubleBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name = "TRoyalBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>WalledVitalsMonitor</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!--======================================IF [T] MoreBedsVanilla AND sdMedicAddons are installed, add walled spacer vitals monitor to beds===============-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[T] MoreBedsVanilla</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[sd] medicaddons</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "TBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "TDoubleBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "TRoyalBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+              <li>WalledVitalsMonitorSpacer</li>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>
