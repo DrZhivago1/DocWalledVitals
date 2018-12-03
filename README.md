@@ -2,7 +2,7 @@
 A small mod that adds a vitals monitor to... well... walls.
 
 Mod Compatibility:
-  [T]MoreBeds(Vanilla and Cloth)
+ [T]MoreBeds(Vanilla and Cloth)
   [ZP]ZipanguPack
   Complete Tech Solutions
   Fast Regen
