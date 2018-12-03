@@ -1,7 +1,7 @@
 # DocWalledVitals
 A small mod that adds a vitals monitor to... well... walls.
 
-Mod Compatibility:
+# Mod Compatibility:
 -[T]MoreBeds(Vanilla and Cloth)
  -[ZP]ZipanguPack
   -Complete Tech Solutions
