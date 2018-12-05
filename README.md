@@ -1,8 +1,8 @@
 # DocWalledVitals
 A small mod that adds a vitals monitor to... well... walls.
 
--[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1580375043)
--[Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg447417)
+- [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1580375043)
+- [Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg447417)
 
 # Mod Compatibility:
 	-[T]MoreBeds(Vanilla and Cloth)
