@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocWalledVitals", "DocWalledVitals.csproj", "{B1BA55E4-1D85-4A1C-9C01-C1E095CC757C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1BA55E4-1D85-4A1C-9C01-C1E095CC757C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BA55E4-1D85-4A1C-9C01-C1E095CC757C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BA55E4-1D85-4A1C-9C01-C1E095CC757C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BA55E4-1D85-4A1C-9C01-C1E095CC757C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		outputpath = ../Assemblies
+	EndGlobalSection
+EndGlobal

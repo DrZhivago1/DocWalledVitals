@@ -22,6 +22,7 @@
     </statBases>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>DocWalledVitals.PlaceWorker_OnWall</li>
     </placeWorkers>
     <building>
       <isInert>true</isInert>
