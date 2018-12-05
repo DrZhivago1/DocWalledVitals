@@ -4,8 +4,8 @@ A small mod that adds a vitals monitor to... well... walls. Check the settings t
 - [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1580375043)
 - [Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg447417)
 
-# Mod Compatibility:
-	Everything
+# Compatibility:
+	Everything. Just delete walled monitors if you wish to remove mod.
 
 # Credits:
     -sulusdacor- for his mod "[sd] medicaddons" (which I highly suggest you get).
