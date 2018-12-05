@@ -5,22 +5,12 @@ A small mod that adds a vitals monitor to... well... walls.
 - [Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg447417)
 
 # Mod Compatibility:
-	-[T]MoreBeds(Vanilla and Cloth)
-	-[ZP]ZipanguPack
-	-Complete Tech Solutions
-	-Fast Regen
-	-Gloomy Furniture
-	-Mending Beds
-	-Midieval Times
-	-NeuTech Advanced Medical Pod
-	-Polyamory Beds
-	-RIMkea
-	-[sd] Goodnight
-	-[sd] Medic Addons
+	Everything
 
 # Credits:
     -sulusdacor- for his mod "[sd] medicaddons" (which I highly suggest you get).
     -zzz- for the original mod mine is based off, "Wall Vitals Monitor".
+    -notfood- for conjuring the spirits of the computer with their spells
     -And of course all the beautiful mod creators/users out in the RimVerse.
 
 
