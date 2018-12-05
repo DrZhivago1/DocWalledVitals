@@ -5,7 +5,7 @@
   
   <!-- DocWalledVitals settings -->
   <DocWalledVitals.AddToAllBeds>All Beds</DocWalledVitals.AddToAllBeds>
-  <DocWalledVitals.AddToAllBedsTooltip>Should Add Walled Vitals Monitor to all Beds, otherwise only where there is already a vitals monitor (requires restart)</DocWalledVitals.AddToAllBedsTooltip>
+  <DocWalledVitals.AddToAllBedsTooltip>Will add Walled Vitals Monitor link to all beds, otherwise only Vanilla vitals monitor behavior. (requires restart)</DocWalledVitals.AddToAllBedsTooltip>
   <DocWalledVitals.PlacementMustBeOnWall>Should place on Walls</DocWalledVitals.PlacementMustBeOnWall>
   
 </LanguageData>
