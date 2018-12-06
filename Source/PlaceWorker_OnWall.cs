@@ -8,13 +8,17 @@ namespace DocWalledVitals
     {
         public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null)
         {
-            var linkFlags = loc.GetEdifice(map)?.def.graphicData?.linkFlags;
-            if (linkFlags == null || (linkFlags & LinkFlags.Wall) == 0)
-            {
-                return ResourceBank.Strings.PlacementMustBeOnWall;
+            var def = loc.GetEdifice(map)?.def;
+            if (def != null && def.IsSmoothed) {
+                return AcceptanceReport.WasAccepted;
             }
 
-            return AcceptanceReport.WasAccepted;
+            var linkFlags = def?.graphicData?.linkFlags;
+            if (linkFlags != null && (linkFlags & LinkFlags.Wall) != 0) {
+                return AcceptanceReport.WasAccepted;
+            }
+
+            return ResourceBank.Strings.PlacementMustBeOnWall;
         }
     }
 }
