@@ -1,8 +1,9 @@
 # DocWalledVitals
 A small mod that adds a vitals monitor to... well... walls. Check the settings to add functionality to all beds.
 
-- [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1580375043)
-- [Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg447417)
+_[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1580375043)_
+
+_[Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg447417)_
 
 # Compatibility:
 	Everything, always. Just deconstruct walled monitors if you wish to remove mod.
