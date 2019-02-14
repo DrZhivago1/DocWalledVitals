@@ -3,7 +3,9 @@
   <name>DocWalledVitals</name>
   <author>Dr_Zhivago</author>
   <url>https://ludeon.com/forums/index.php?topic=47165.0</url>
-  <targetVersion>1.0.2096</targetVersion>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
   <description>
     A small mod that adds a vitals monitor to... well... walls. Check the settings to add functionality to all beds.
     
