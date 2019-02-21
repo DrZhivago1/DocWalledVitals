@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-  <version>2.0.1</version>
+  <version>2.0.2</version>
   <suggests>
     <li>786233894</li>
     <li>935099161</li>
     <li>946390822</li>
-    <li>1567724907</li>
     <li>1568744597</li>
   </suggests>
   <showCrossPromotions>true</showCrossPromotions>
