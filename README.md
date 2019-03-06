@@ -9,7 +9,7 @@ _[Link to Ludeon](https://ludeon.com/forums/index.php?topic=47165.msg447417#msg4
 	Everything, always. Just deconstruct walled monitors if you wish to remove mod.
 
 # Credits:
-    -sulusdacor- for his mod medicaddons(https://ludeon.com/forums/index.php?topic=26276.msg273452#msg273452) (which I highly suggest you get).
+    -sulusdacor- for his mod [sd] medicaddons (which I highly suggest you get).
     -zzz- for the original mod mine is based off, "Wall Vitals Monitor".
     -notfood- for conjuring the spirits of the computer with their spells
     -And of course all the beautiful mod creators/users out in the RimVerse.
